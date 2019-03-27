@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://d3js.org/"></script>
+</head>
+<body>
+	<svg width="1000" height="1000" id="mySvg">
+	</svg>
+
+</body>
+
+</html>
+
+<script>
+var svgContainer = d3.select("#mySvg");
+//Method Chaining
+var myRectangle = svgContainer.append("rect");
+	.attr("x", 100)
+	.attr("y", 100)
+	.attr("height", 50)
+	.attr("width", 200)
+	.attr("fill", "orange");
+
+var myCircle = svgContainer.append("Circle")
+	.attr("cx", 100)
+	.attr("cy", 100)
+	.attr("r", 250)
+	.attr("fill", "blue")
+	.attr("stroke", "yellow")
+	.attr("stroke-width", 20);
+
+</script>
